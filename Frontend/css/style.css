@@ -1,0 +1,76 @@
+:root {
+    --light-purple: #e6e1f2;
+    --dark-purple: #5a4b81;
+  }
+  
+  body.auth-body {
+    background-color: var(--light-purple);
+    color: var(--dark-purple);
+    font-family: Arial, sans-serif;
+  }
+  
+  .welcome-text {
+    color: var(--dark-purple);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .auth-form {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .buttons .btn-primary,
+  .buttons .btn-secondary {
+    font-size: 1.2rem;
+    width: 200px;
+    padding: 10px 0;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Стиль для кнопки "Увійти" */
+  .buttons .btn-primary {
+    background-color: var(--dark-purple);
+    color: #fff;
+  }
+  
+  .buttons .btn-primary:hover {
+    background-color: #fff;
+    color: var(--dark-purple);
+    border: 1px solid var(--dark-purple);
+  }
+  
+  /* Стиль для кнопки "Зареєструватися" */
+  .buttons .btn-secondary {
+    background-color: var(--light-purple);
+    color: var(--dark-purple);
+    border: 1px solid var(--dark-purple);
+  }
+  
+  .buttons .btn-secondary:hover {
+    background-color: var(--dark-purple);
+    color: #fff;
+  }
+
+  /* Зміна кольору підказки для input */
+.form-control::placeholder {
+    color: var(--dark-purple);
+    opacity: 1; /* Зберігає яскравість кольору */
+  }
+
+  /* Темно-фіолетовий стиль для btn-primary */
+.btn-primary {
+    background-color: var(--dark-purple) !important;
+    color: #fff !important;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Ефект наведення для btn-primary */
+  .btn-primary:hover {
+    background-color: #fff !important;
+    color: var(--dark-purple) !important;
+    border: 1px solid var(--dark-purple) !important;
+  }
+  

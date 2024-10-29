@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/icon_color.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Color recognition - Увійти</title>
+  </head>
+  <body class="auth-body">
+    <div class="container text-center mt-5">
+      <h2 class="mb-4">Вхід в акаунт</h2>
+      <form action="/login" method="post" class="auth-form">
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Введіть e-mail",  title="Введіть правильний e-mail" required>
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control" placeholder="Введіть пароль" required id="password" 
+          pattern="^[A-Za-z0-9.]{5,15}$" minlength="5" maxlength="15">
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Увійти</button>
+      </form>
+      <p class="mt-3"><a href="authorization.html" class="link-secondary">Повернутися назад</a></p>
+    </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
